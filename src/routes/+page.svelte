@@ -12,8 +12,8 @@
 </script>
 
 <div class="container">
-    <h1 class="title">SITE</h1>
-    <p class="description">Essa aplicação é um exemplo de como usar o SvelteKit com o Supabase.</p>
+    <h1 class="title">SUPEEEERRR</h1>
+    <p class="description">Feito com intuito de estudar sobre Auth com o SupaBase</p>
     {#if user}
         <p class="welcome-message">Bem-vindo de volta, { user.email }!</p>
         <Button class="logout-button" on:click={ logout }>Logout</Button>
@@ -36,7 +36,6 @@
         height: 100vh;
         margin: 0 auto;
         padding: 0 1rem;
-        background-color: #f5f5f5;
     }
 
     .title {
