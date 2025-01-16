@@ -11,70 +11,17 @@
     }
 </script>
 
-<div class="container">
-    <h1 class="title">SUPEEEERRR</h1>
-    <p class="description">Feito com intuito de estudar sobre Auth com o SupaBase</p>
+<div class="flex flex-col items-center justify-center bg-gray-900 pt-24 text-gray-200 stext-center h-screen mx-auto px-4">
+    <h1 class="text-4xl mb-4 font-bold">SUPEEEERRR</h1>
+    <p class="text-lg mb-6 font-bold">Feito com intuito de estudar sobre Auth com o SupaBase</p>
     {#if user}
-        <p class="welcome-message">Bem-vindo de volta, { user.email }!</p>
-        <Button class="logout-button" on:click={ logout }>Logout</Button>
+        <p class="text-xl mb-4 font-bold">Bem-vindo de volta, { user.email }!</p>
+        <Button class="btn btn-primary" on:click={ logout }>Logout</Button>
     {:else}
-        <div class="auth-links">
-            <a class="login-link" href="/login">Logar</a>
-            <span class="separator">|</span>
-            <a class="register-link" href="/register">Criar Conta</a>
+        <div class="flex justify-center gap-4">
+            <a class="text-purple-400  hover:text-purple-600 transition-colors text-base" href="/login">Logar</a>
+            <span class="text-gray-600 text-base">|</span>
+            <a class="text-purple-400 hover:text-purple-600 transition-colors text-base" href="/register">Criar Conta</a>
         </div>
     {/if}
 </div>
-
-<style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 100vh;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-
-    .title {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        color: #333;
-    }
-
-    .description {
-        font-size: 1.25rem;
-        margin-bottom: 1.5rem;
-        color: #666;
-    }
-
-    .welcome-message {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: #333;
-    }
-
-    .auth-links {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .login-link, .register-link {
-        color: #007bff;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: color 0.3s ease;
-    }
-
-    .login-link:hover, .register-link:hover {
-        color: #0056b3;
-    }
-
-    .separator {
-        color: #666;
-        font-size: 1rem;
-    }
-</style>
