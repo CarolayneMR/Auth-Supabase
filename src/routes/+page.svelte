@@ -7,7 +7,7 @@
 
 	async function logout() {
         await supabase.auth.signOut();
-        goto("/" , { invalidateAll: true });
+        goto("/" , { invalidateAll: true});
     }
 </script>
 
