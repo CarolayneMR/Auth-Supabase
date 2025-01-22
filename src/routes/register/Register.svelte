@@ -34,7 +34,7 @@
 			<h1 class="mr-20 text-center text-2xl font-bold">Criar Conta</h1>
 		</div>
 		<Form.Field {form} name="email">
-			/** Campo do formulário para o "Email", vinculado ao formulário dinâmico. */
+			<!-- Campo do formulário para o "Email", vinculado ao formulário dinâmico. *-->
 			<Form.Control let:attrs>
 				<Form.Label class="block text-sm font-medium">Email</Form.Label>
 				<Input
